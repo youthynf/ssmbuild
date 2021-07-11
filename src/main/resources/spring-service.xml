@@ -16,6 +16,7 @@
     <context:component-scan base-package="com.study.service" />
 
     <!--2.BookServiceImpl注入到IOC容器中-->
+    <!--可以使用注解简化：使用@Service修饰BookServiceImpl类，同时使用@Autowired注入bookMapper-->
     <bean id="bookServiceImpl" class="com.study.service.BookServiceImpl">
         <property name="bookMapper" ref="bookMapper"/>
     </bean>

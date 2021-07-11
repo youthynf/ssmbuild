@@ -2,11 +2,15 @@ package com.study.service;
 
 import com.study.dao.BookMapper;
 import com.study.pojo.Books;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+//@Service
 public class BookServiceImpl implements BookService{
     //service调dao层:  组合Dao    可添加业务
+//    @Autowired
     private BookMapper bookMapper;
 
     public void setBookMapper(BookMapper bookMapper) {
